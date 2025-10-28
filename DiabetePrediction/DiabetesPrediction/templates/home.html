@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style type="text/css">
+        body {
+            background-image: url("{% static 'DiabetesPrediction/images/prediction.png' %}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            color: black;
+            font-family: Arial, sans-serif;
+            font-size: 60px;
+            font-weight: bold;
+            margin-top: 200px;
+        }
+
+        h2 {
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 400px;
+        }
+
+        input[type=submit] {
+            background-color: #4dc3ff;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #0099cc;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>WELCOME TO DIABETES PREDICTION SYSTEM</h1>
+        <form action="predict">
+            <input type="submit" value="Let's Get Started">
+        </form>
+    </div>
+</body>
+</html>
